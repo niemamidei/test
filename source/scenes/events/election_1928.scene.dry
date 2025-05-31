@@ -293,8 +293,6 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='backgroupisd-color:#073A76'> </div> !}PiS: {!</td><td>!} [+ pis_r +]% {!</td><td>!} [+ str_chapisge_pis +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='backgroupisd-color:#073A76'> </div> !}PiS: {!</td><td>!} [+ pis_r +]% {!</td><td>!} [+ str_chapisge_pis +] {!</td></tr>!}
-
 {!<tr><td><div class="box" style='backgroukwind-color:#102440'> </div> !}K: {!</td><td>!} [+ kwin_r +]% {!</td><td>!} [+ str_chakwinge_kwin +] {!</td></tr>!}
 {!</table>!}
 
