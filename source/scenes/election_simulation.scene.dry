@@ -177,68 +177,59 @@ Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 55;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 0;
-Q.workers_nsdap = 15;
-Q.workers_other = 5;
+Q.workers_pr = 4;
+Q.workers_sld = 7;
+Q.workers_po = 22;
+Q.workers_n = 5;
+Q.workers_psl = 6;
+Q.workers_k15 = 11;
+Q.workers_pis = 40;
+Q.workers_kwin = 5;
 
-Q.old_middle_spd = 0;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp = 4;
-Q.old_middle_dvp = 4;
-Q.old_middle_dnvp = 15;
-Q.old_middle_nsdap = 70;
-Q.old_middle_other = 5;
+Q.farmers_pr = 2;
+Q.farmers_sld = 4;
+Q.farmers_po = 11;
+Q.farmers_n = 2;
+Q.farmers_psl = 18;
+Q.farmers_k15 = 7;
+Q.farmers_pis = 53;
+Q.farmers_kwin = 3;
 
-Q.new_middle_spd = 5;
-Q.new_middle_kpd = 0;
-Q.new_middle_z = 5;
-Q.new_middle_ddp = 10;
-Q.new_middle_dvp = 10;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 60;
-Q.new_middle_other = 5;
+Q.pensioners_pr = 2;
+Q.pensioners_sld = 9;
+Q.pensioners_po = 28;
+Q.pensioners_n = 3;
+Q.pensioners_psl = 5;
+Q.pensioners_k15 = 3;
+Q.pensioners_pis = 49;
+Q.pensioners_kwin = 1;
 
-Q.rural_spd = 0;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp = 0;
-Q.rural_dvp = 5;
-Q.rural_dnvp = 15;
-Q.rural_nsdap = 65;
-Q.rural_other = 5;
+Q.students_pr = 6;
+Q.students_sld = 4;
+Q.students_po = 13;
+Q.students_n = 9;
+Q.students_psl = 3;
+Q.students_k15 = 21;
+Q.students_pis = 23;
+Q.students_kwin = 21;
 
-Q.unemployed_spd = 20;
-Q.unemployed_kpd = 40;
-Q.unemployed_z = 0;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 0;
-Q.unemployed_nsdap = 50;
-Q.unemployed_other = 5;
+Q.unemployed_pr = 4;
+Q.unemployed_sld = 5;
+Q.unemployed_po = 19;
+Q.unemployed_n = 4;
+Q.unemployed_psl = 5;
+Q.unemployed_k15 = 13;
+Q.unemployed_pis = 45;
+Q.unemployed_kwin = 5;
 
-Q.catholics_spd = 10;
-Q.catholics_kpd = 5;
-Q.catholics_z = 60;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 10;
-Q.catholics_other = 5;
-
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
-Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
-Q.nsdap_r = 10;
-Q.other_r = 5;
+Q.entrepreneurs_pr = 3;
+Q.entrepreneurs_sld = 5;
+Q.entrepreneurs_po = 31;
+Q.entrepreneurs_n = 16;
+Q.entrepreneurs_psl = 4;
+Q.entrepreneurs_k15 = 10;
+Q.entrepreneurs_pis = 25;
+Q.entrepreneurs_kwin = 6;
 !}
 go-to: election_algorithm
 set-jump: post_election
