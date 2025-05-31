@@ -249,7 +249,6 @@ on-arrival: {!
 Q.pr_r = Q.pr_votes;
 Q.sld_r = Q.sld_votes;
 Q.po_r = Q.po_votes;
-Q.p2050_r = Q.p2050_votes;
 Q.psl_r = Q.psl_votes;
 Q.n_r = Q.n_votes;
 Q.k15_r = Q.k15_votes;
