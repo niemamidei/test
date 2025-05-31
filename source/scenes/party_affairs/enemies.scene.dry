@@ -41,6 +41,6 @@ on-arrival: enemies = "SLD"; reformist_strength += 5; left_dissent += 8; reformi
 Attacking the SLD isn't nearly as popular as attacking other parties, although it may give us the largest gains.
 
 @popis
-on-arrival: enemies = "bourgeois parties"; left_strength += 8; left_dissent -= 5; dvp_relation -= 5; z_relation -= 5; kpd_relation += 5; reformist_dissent += 8; workers_po -= 3; workers_pis -= 3; coalition_dissent += 1
+on-arrival: enemies = "POPiS"; left_strength += 8; left_dissent -= 5; dvp_relation -= 5; z_relation -= 5; kpd_relation += 5; reformist_dissent += 8; workers_po -= 3; workers_pis -= 3; coalition_dissent += 1
 
 Our anti-POPiS rhetoric is popular - especially among the students, though it will make any future coalitions harder to accomplish.
