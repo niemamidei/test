@@ -168,8 +168,6 @@ SLD: [+ sld_votes +]%
 
 PO: [+ po_votes +]%
 
-P2050: [+ p2050_votes +]%
-
 PSL: [+ psl_votes +]%
 
 N.: [+ n_votes +]%
@@ -182,16 +180,16 @@ K: [+ kwin_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: PR: [+ workers_pr_display +]%, SLD: [+ workers_sld_display +]%, PO: [+ workers_po_display +]%, P2050: [+ workers_p2050_display +]%, PSL: [+ workers_psl_display +]%, N.: [+ workers_n_display +]%, K'15: [+ workers_k15_display +]%, PiS: [+ workers_pis_display +]%, K: [+ workers_kwin_display +]%, [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: PR: [+ workers_pr_display +]%, SLD: [+ workers_sld_display +]%, PO: [+ workers_po_display +]%, PSL: [+ workers_psl_display +]%, N.: [+ workers_n_display +]%, K'15: [+ workers_k15_display +]%, PiS: [+ workers_pis_display +]%, K: [+ workers_kwin_display +]%, [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-Entrepreneurs: PR: [+ entrepreneurs_pr_display +]%, SLD: [+ entrepreneurs_sld_display +]%, PO: [+ entrepreneurs_po_display +]%, P2050: [+ entrepreneurs_p2050_display +]%, PSL: [+ entrepreneurs_psl_display +]%, N.: [+ entrepreneurs_n_display +]%, K'15: [+ entrepreneurs_k15_display +]%, PiS: [+ entrepreneurs_pis_display +]%, K: [+ entrepreneurs_kwin_display +]%, [? if sapd_formed: SAPD: [+ entrepreneurs_sapd_display +]% ?]
+Entrepreneurs: PR: [+ entrepreneurs_pr_display +]%, SLD: [+ entrepreneurs_sld_display +]%, PO: [+ entrepreneurs_po_display +]%, PSL: [+ entrepreneurs_psl_display +]%, N.: [+ entrepreneurs_n_display +]%, K'15: [+ entrepreneurs_k15_display +]%, PiS: [+ entrepreneurs_pis_display +]%, K: [+ entrepreneurs_kwin_display +]%, [? if sapd_formed: SAPD: [+ entrepreneurs_sapd_display +]% ?]
 
-Students: PR: [+ students_pr_display +]%, SLD: [+ students_sld_display +]%, PO: [+ students_po_display +]%, P2050: [+ students_p2050_display +]%, PSL: [+ students_psl_display +]%, N.: [+ students_n_display +]%, K'15: [+ students_k15_display +]%, PiS: [+ students_pis_display +]%, K: [+ students_kwin_display +]%, [? if sapd_formed: SAPD: [+ students_sapd_display +]% ?]
+Students: PR: [+ students_pr_display +]%, SLD: [+ students_sld_display +]%, PO: [+ students_po_display +]%, PSL: [+ students_psl_display +]%, N.: [+ students_n_display +]%, K'15: [+ students_k15_display +]%, PiS: [+ students_pis_display +]%, K: [+ students_kwin_display +]%, [? if sapd_formed: SAPD: [+ students_sapd_display +]% ?]
 
-Farmers: PR: [+ farmers_pr_display +]%, SLD: [+ farmers_sld_display +]%, PO: [+ farmers_po_display +]%, P2050: [+ farmers_p2050_display +]%, PSL: [+ farmers_psl_display +]%, N.: [+ farmers_n_display +]%, K'15: [+ farmers_k15_display +]%, PiS: [+ farmers_pis_display +]%, K: [+ farmers_kwin_display +]%, [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
+Farmers: PR: [+ farmers_pr_display +]%, SLD: [+ farmers_sld_display +]%, PO: [+ farmers_po_display +]%, PSL: [+ farmers_psl_display +]%, N.: [+ farmers_n_display +]%, K'15: [+ farmers_k15_display +]%, PiS: [+ farmers_pis_display +]%, K: [+ farmers_kwin_display +]%, [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
 
-Unemployed: PR: [+ unemployed_pr_display +]%, SLD: [+ unemployed_sld_display +]%, PO: [+ unemployed_po_display +]%, P2050: [+ unemployed_p2050_display +]%, PSL: [+ unemployed_psl_display +]%, N.: [+ unemployed_n_display +]%, K'15: [+ unemployed_k15_display +]%, PiS: [+ unemployed_pis_display +]%, K: [+ unemployed_kwin_display +]%, [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed: PR: [+ unemployed_pr_display +]%, SLD: [+ unemployed_sld_display +]%, PO: [+ unemployed_po_display +]%, PSL: [+ unemployed_psl_display +]%, N.: [+ unemployed_n_display +]%, K'15: [+ unemployed_k15_display +]%, PiS: [+ unemployed_pis_display +]%, K: [+ unemployed_kwin_display +]%, [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
 
-Pensioners: PR: [+ pensioners_pr_display +]%, SLD: [+ pensioners_sld_display +]%, PO: [+ pensioners_po_display +]%, P2050: [+ pensioners_p2050_display +]%, PSL: [+ pensioners_psl_display +]%, N.: [+ pensioners_n_display +]%, K'15: [+ pensioners_k15_display +]%, PiS: [+ pensioners_pis_display +]%, K: [+ pensioners_kwin_display +]%, [? if sapd_formed: SAPD: [+ pensioners_sapd_display +]% ?]
+Pensioners: PR: [+ pensioners_pr_display +]%, SLD: [+ pensioners_sld_display +]%, PO: [+ pensioners_po_display +]%, PSL: [+ pensioners_psl_display +]%, N.: [+ pensioners_n_display +]%, K'15: [+ pensioners_k15_display +]%, PiS: [+ pensioners_pis_display +]%, K: [+ pensioners_kwin_display +]%, [? if sapd_formed: SAPD: [+ pensioners_sapd_display +]% ?]
 
 
