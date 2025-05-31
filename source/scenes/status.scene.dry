@@ -80,8 +80,6 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Civic Platform">PO</span>!}: [+ po_relation : relationships +]
 
-{!<span class="tooltip-text" title="Poland 2050">P2050</span>!}: [+ p2050_relation : relationships +]
-
 {!<span class="tooltip-text" title="Modern">N.</span>!}: [+ n_relation : relationships +]
 
 {!<span class="tooltip-text" title="Polish People's Party">PSL</span>!}: [+ psl_relation : relationships +]
