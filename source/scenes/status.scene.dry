@@ -168,8 +168,6 @@ PO: [+ po_votes +]%
 
 P2050: [+ p2050_votes +]%
 
-// [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
-
 PSL: [+ psl_votes +]%
 
 N.: [+ n_votes +]%
