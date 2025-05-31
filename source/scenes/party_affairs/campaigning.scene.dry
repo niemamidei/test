@@ -66,4 +66,4 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: pensioners_pr += 3*(1-dissent); resources -= 1
 
-We have increased our campaigning among Catholics.
+We have increased our campaigning among pensioners.
