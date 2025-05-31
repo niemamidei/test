@@ -98,8 +98,6 @@ Q.nationalization_adopted = 0;
 Q.moderate_plan_support = 0;
 Q.moderate_plan_adopted = 0;
 
-// organizations
-
 // inter-party relations
 Q.sld_relation = 30;
 Q.po_relation = 40;
