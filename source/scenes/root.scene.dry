@@ -221,7 +221,7 @@ Q.economic_expansion = 0;
 // Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'farmers', 'pensioners', 'students', 'unemployed', 'entrepreneurs'];
-Q.parties = ['pr', 'sld', 'po', 'p2050', 'n', 'psl', 'k15', 'pis', 'kwin'];
+Q.parties = ['pr', 'sld', 'po', 'n', 'psl', 'k15', 'pis', 'kwin'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
