@@ -289,11 +289,11 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#007EA8'> </div> !}N.: {!</td><td>!} [+ n_r +]% {!</td><td>!} [+ str_change_n +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='backgrouk15d-color:#000000'> </div> !}K'15: {!</td><td>!} [+ k15_r +]% {!</td><td>!} [+ str_chak15ge_k15 +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000000'> </div> !}K'15: {!</td><td>!} [+ k15_r +]% {!</td><td>!} [+ str_chak15ge_k15 +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='backgroupisd-color:#073A76'> </div> !}PiS: {!</td><td>!} [+ pis_r +]% {!</td><td>!} [+ str_chapisge_pis +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#073A76'> </div> !}PiS: {!</td><td>!} [+ pis_r +]% {!</td><td>!} [+ str_chapisge_pis +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='backgroukwind-color:#102440'> </div> !}K: {!</td><td>!} [+ kwin_r +]% {!</td><td>!} [+ str_chakwinge_kwin +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#102440'> </div> !}K: {!</td><td>!} [+ kwin_r +]% {!</td><td>!} [+ str_chakwinge_kwin +] {!</td></tr>!}
 {!</table>!}
 
 **Potential coalitions:**
