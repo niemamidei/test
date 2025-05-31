@@ -174,7 +174,7 @@ Q.pro_republic = 59;
 Q.emergency_rule = 0;
 
 // minimum percentage of votes to be represented in the Reichstag
-Q.electoral_threshold = 5;
+Q.electoral_threshold = 0;
 // constitutional reform level
 Q.constitutional_reform = 0;
 // constructive vote of no confidence
@@ -448,7 +448,7 @@ Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
 Q.tariffs = 0;
 
-Q.electoral_threshold = 5;
+Q.electoral_threshold = 0;
 
 // our conduct in the government, and the conduct of our coalition opponents.
 // did the SPD vote against the previous government in a vote of no confidence?
