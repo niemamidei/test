@@ -213,12 +213,6 @@ data = data.concat([
         "seats": Math.round(Q.po_r*5),
     },
     {
-        "id": "p2050",
-        "legend": "P2050",
-        "name": "P2050",
-        "seats": Math.round(Q.p2050_r*5),
-    },
-    {
         "id": "psl",
         "legend": "PSL",
         "name": "PSL",
@@ -282,8 +276,6 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#ED1D23'> </div> !}SLD: {!</td><td>!} [+ sld_r +]% {!</td><td>!} [+ str_change_sld +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#FCA241'> </div> !}PO: {!</td><td>!} [+ po_r +]% {!</td><td>!} [+ str_change_po +] {!</td></tr>!}
-
-{!<tr><td><div class="box" style='background-color:#FBC314'> </div> !}P2050: {!</td><td>!} [+ p2050_r +]% {!</td><td>!} [+ str_change_p2050 +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#1BB100'> </div> !}PSL: {!</td><td>!} [+ psl_r +]% {!</td><td>!} [+ str_change_psl +] {!</td></tr>!}
 
