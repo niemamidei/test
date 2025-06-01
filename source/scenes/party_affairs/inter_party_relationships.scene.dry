@@ -24,7 +24,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"
-go-to: po_op if po_in_government = 1 and pr_in_government = 0; po_coalition if po_in_government = 1 and pr_in_government = 1; po_toleration if chancellor = "Brüning"; popr_op if po_in_government = 0 and pr_in government = 0
+go-to: po_op if po_in_government = 1 and pr_in_government = 0; po_coalition if po_in_government = 1 and pr_in_government = 1; po_toleration if chancellor = "Brüning"; popr_op if if po_in_government = 0 and pr_in_government = 0
 
 @po_op
 on-arrival: po_relation += 5*(1 - dissent); n_relation += 5*(1 - dissent)
