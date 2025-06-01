@@ -92,12 +92,9 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of the SPD
 
-{!<span class="tooltip-text" title="The far-left's goal is to fight against POPiS and enact radical changes.">Far-Left</span>!} strength: [+ farleft_strength : strength +], dissent: [+ farleft_dissent : dissent +]
+{!<span class="tooltip-text" title="The left focuses mostly on economic changes.">Far-Left</span>!} strength: [+ farleft_strength : strength +], dissent: [+ farleft_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Progressives are interested in making the state accept minorities.">Progressives</span>!} strength: [+ progressive_strength : strength +], dissent: [+ progressive_dissent : dissent +]
-
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
-
+{!<span class="tooltip-text" title="The progressives are interested in cooperation with other progressive parties.">Progressives</span>!} strength: [+ progressive_strength : strength +], dissent: [+ progressive_dissent : dissent +]
 
 @paramilitaries
 on-arrival: {!
