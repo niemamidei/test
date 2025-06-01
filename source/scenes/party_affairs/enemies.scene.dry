@@ -21,26 +21,26 @@ In our media and campaign materials, who should we consider as our main opponent
 - @easy_discard
 
 @po
-on-arrival: enemies = "PO"; center_strength += 5; reformist_strength += 5; left_dissent += 5; workers_po -= 2; kpd_relation -= 10
+on-arrival: enemies = "PO"; progressives_strength -=10; left_strength += 5; progressives_dissent += 10; workers_po -= 2; po_relation -= 10
 
 Attacking the Civic Platform for their policies is somewhat popular among the party but it may hamper any future coalitions with them.
 
 @pis
-on-arrival: enemies = "PiS"; left_strength += 5; left_dissent -= 5; workers_pis -= 3;
+on-arrival: enemies = "PiS"; progressives_strength +=10; left_strength -= 5; progressives_dissent -= 10; workers_pis -= 3; pis_relation -= 10
 
 Attacking Law and Justice is popular among the progressives though it will make any cooperation with this party harder.
 
 @kwin
-on-arrival: enemies = "K"; neorevisionist_strength += 5; nazi_urgency += 1; workers_kwin -= 1;
+on-arrival: enemies = "K"; progressives_strength +=5; progressives_dissent -= 5; left_dissent -= 5; workers_kwin -= 1; kwin_relation -= 5
 
 Attacking the far-right is popular amongst the entirety of the party, but it may bring us less publicity than attacking the two largest parties.
 
 @sld
-on-arrival: enemies = "SLD"; reformist_strength += 5; left_dissent += 8; reformist_dissent -= 5; kpd_relation -= 15; dvp_relation += 5; z_relation += 5; workers_sld -= 4;
+on-arrival: enemies = "SLD"; workers_sld -= 2; left_dissent -=10; progressives_dissent -=10; workers_pr += 1; sld_relation -= 10
 
 Attacking the SLD isn't nearly as popular as attacking other parties, although it may give us the largest gains.
 
 @popis
-on-arrival: enemies = "POPiS"; left_strength += 8; left_dissent -= 5; dvp_relation -= 5; z_relation -= 5; kpd_relation += 5; reformist_dissent += 8; workers_po -= 3; workers_pis -= 3; coalition_dissent += 1
+on-arrival: enemies = "POPiS"; left_strength += 10; left_dissent -= 5; progressives_dissent -= 5; students_pr += 2; workers_po -= 2; workers_pis -= 2; coalition_dissent += 1; pis_relation -= 8; po_relation -= 8
 
 Our anti-POPiS rhetoric is popular - especially among the students, though it will make any future coalitions harder to accomplish.
