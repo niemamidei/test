@@ -92,7 +92,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of the SPD
 
-{!<span class="tooltip-text" title="The left focuses mostly on economic changes.">Far-Left</span>!} strength: [+ farleft_strength : strength +], dissent: [+ farleft_dissent : dissent +]
+{!<span class="tooltip-text" title="The left focuses mostly on economic changes.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
 {!<span class="tooltip-text" title="The progressives are interested in cooperation with other progressive parties.">Progressives</span>!} strength: [+ progressive_strength : strength +], dissent: [+ progressive_dissent : dissent +]
 
