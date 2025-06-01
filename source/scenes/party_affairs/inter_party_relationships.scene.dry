@@ -105,7 +105,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"; progressive_dissent -= 5
-go-to: sld_op if sld_in_government = 1 and pr_in_government = 0; sld_coalition if sld_in_government = 1 and pr_in_government = 1; sld_toleration if chancellor = "Brüning"; sldpr_op if sld_in_government = 0 and pr_in government = 0
+go-to: sld_op if sld_in_government = 1 and pr_in_government = 0; sld_coalition if sld_in_government = 1 and pr_in_government = 1; sld_toleration if chancellor = "Brüning"; sldpr_op if sld_in_government = 0 and pr_in_government = 0
 
 @sld_op
 on-arrival: sld_relation += 5*(1 - dissent)
