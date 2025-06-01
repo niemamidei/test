@@ -46,14 +46,12 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['progressive', 'farleft', 'labor'];
+Q.factions = ['progressive', 'left'];
 // should this be normalized to 100%?
-Q.progressive_strength = 25;
+Q.progressive_strength = 40;
 Q.progressive_dissent = 0;
-Q.farleft_strength = 30;
-Q.farleft_dissent = 0;
-Q.labor_strength = 45;
-Q.labor_dissent = 0;
+Q.left_strength = 60;
+Q.left_dissent = 0;
 
 // secret events...
 Q.unions_independent = 0;
