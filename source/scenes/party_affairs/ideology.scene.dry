@@ -36,7 +36,7 @@ if (Q.ideology && Q.ideology != "progressive") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = progressive"; progressive_strength += 10; democratization += 1; progressive_dissent -= 5; sld_relation += 5; sld_relation += 5; pis_relation -= 5
+on-departure: ideology = "progressive"; progressive_strength += 10; democratization += 1; progressive_dissent -= 5; sld_relation += 5; sld_relation += 5; pis_relation -= 5
 
 The progressive wing of the party seeks to enact social reform with support of the other parties, and is most supportive of coalitions with the other liberal parties.
 
