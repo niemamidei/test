@@ -50,7 +50,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"; progressive_dissent += 10
-go-to: pis_op if pis_in_government = 1 and pr_in_government = 0; pis_coalition if pis_in_government = 1 and pr_in_government = 1; pis_toleration if chancellor = "Brüning"; pispr_op if pis_in_government = 0 and pr_in government = 0
+go-to: pis_op if pis_in_government = 1 and pr_in_government = 0; pis_coalition if pis_in_government = 1 and pr_in_government = 1; pis_toleration if chancellor = "Brüning"; pispr_op if pis_in_government = 0 and pr_in_government = 0
 
 @pis_op
 on-arrival: pis_relation += 3*(1 - dissent)
