@@ -77,7 +77,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"
-go-to: psl_op if psl_in_government = 1 and pr_in_government = 0; psl_coalition if psl_in_government = 1 and pr_in_government = 1; psl_toleration if chancellor = "Brüning"; pslpr_op if psl_in_government = 0 and pr_in government = 0
+go-to: psl_op if psl_in_government = 1 and pr_in_government = 0; psl_coalition if psl_in_government = 1 and pr_in_government = 1; psl_toleration if chancellor = "Brüning"; pslpr_op if psl_in_government = 0 and pr_in_government = 0
 
 @psl_op
 on-arrival: psl_relation += 4*(1 - dissent); k15_relation += 4*(1 - dissent)
