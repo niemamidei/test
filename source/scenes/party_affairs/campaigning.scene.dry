@@ -33,6 +33,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: entrepreneurs_pr += 2*(1-dissent); resources -= 1
+
 We have increased our campaigning among the entrepreneurs.
 
 @students
@@ -40,6 +41,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: students_pr += 2*(1-dissent); resources -= 1
+
 We have increased our campaigning among students.
 
 @farmers
@@ -55,6 +57,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: unemployed_pr += 2*(1-dissent); resources -= 1
+
 We have increased our campaigning among the unemployed.
 
 @pensioners
@@ -62,4 +65,5 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: pensioners_pr += 2*(1-dissent); resources -= 1
+
 We have increased our campaigning among pensioners.
