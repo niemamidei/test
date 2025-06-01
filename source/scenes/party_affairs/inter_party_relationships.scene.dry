@@ -1,119 +1,111 @@
 title: Inter-Party Relationships
 new-page: true
-view-if: year <= 1932 and inter_party_relationships_timer <= 0
+view-if: inter_party_relationships_timer <= 0
 tags: party_affairs
 is-card: true
 on-arrival: month_actions += 1; inter_party_relationships_timer = 6;
 card-image: img/weimar_coalition_2.jpg
 max-visits: 12
-#subtitle: Building relations with the other political parties of Germany.
+#subtitle: Building relations with the other political parties of Poland.
 
 = Inter-Party Relationships
 
-The SPD cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Weimar Coalition of the SPD, Center, and Democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+Razem cannot govern by itself. Because we aren't even close to an electoral majority, we need the support of other parties. We can reach out and build additional connections with other parties, or perhaps we can stand alone.
 
-- @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
-- @center: Strengthen our bonds with the Catholic Center Party.
-- @kpd: Work towards repairing relationships with the Communist Party.
-- @spd_alone: The SPD can stand alone for now.
+- @liberals: Strengthen our bonds with the liberal Civic Platform and Modern.
+- @pis: Strengthen our bonds with Law and Justice.
+- @plsk15: Strengthen our bonds with the Polish People's Party and Kukiz'15.
+- @sld: Work towards improving relationships with the Democratic Left Alliance.
+- @pr_alone: Razem can stand alone for now.
 - @easy_discard
-
-
-@kpd
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; kpd_inter_party_seen += 1
-go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and kpd_coalition_success = 0 and (kpd_relation < 40 or kpd_rectifed_history = 1); kpd_rectification_of_history if kpd_relation >= 40 and kpd_rectifed_history = 0; kpd_2 if kpd_coalition_success = 1 and kpd_rectified_history = 1
-
-@kpd_1
-on-arrival: kpd_relation += 6*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 2; dvp_relation -= 3
-
-The communists are suspicious of our overtures, especially the Stalinist leadership, who persist in calling us "social fascists". However, connections are made at the grassroots and local levels.
-
-@kpd_rectification_of_history
-
-One stumbling block for our relations with the KPD is our history of conflict, dating back to 1918 and 1919. The KPD is especially contemptuous of Gustav Noske, the SPD "bloodhound" who reportedly ordered the violent suppression of the Spartacist uprising and other KPD revolts. They also blame us for the deaths of Rosa Luxemburg and Karl Liebknecht, two SPD-turned-KPD leaders who were killed during the suppression of the uprising.
-
-For further improvements in KPD relations, it might be necessary to expel Noske, and hold some sort of commemoration for Luxemburg and Liebknecht.
-
-- @yes_history: Yes, we must apologize for our past actions.
-- @no_history: No, we have no need to apologize.
-
-@yes_history
-on-arrival: reformist_dissent += 12; reformist_strength -= 2; neorevisionist_dissent += 5; left_dissent -= 6; left_strength += 5; kpd_rectified_history = 1; z_relation -= 6; dvp_relation -= 6; ddp_relation -= 4; kpd_relation += 8*(1-dissent); coalition_dissent += 1
-
-As part of normalizing relations with the KPD, we have to acknowledge the wrongdoings of our past. We have expelled Noske, and have held public commemorations for those killed by troops during the uprisings.
-
-This leads to tensions with the moderates and reformists within our party, and criticism from the conservative and liberal parties.
-
-@no_history
-on-arrival: kpd_relation -= 3
-
-We have no need to apologize for the actions of Ebert and Noske; it is the Communists' fault for launching a violent insurrection.
-
-
-@kpd_2
-on-arrival: kpd_relation += 8*(1 - dissent); communist_coalition += 1 if kpd_inter_party_seen <= 1; reformist_dissent += 2; z_relation -= 3; dvp_relation -= 3
-
-After the success of the coalition government with the KPD, they are much more amenable to us.
-
-@kpd_blutmai
-on-arrival: kpd_relation += 3*(1 - dissent); reformist_dissent += 1
-
-After the events of Blütmai, reconciling with the Communists is difficult, if not impossible. Nevertheless, we must try.
-
-@center
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"
-go-to: center_op if z_in_government = 1 and spd_in_government = 0 and chancellor != "Brüning"; center_coalition if spd_in_government = 1 and z_in_government = 1; center_bruning if chancellor = "Brüning"
-
-@center_op
-on-arrival: z_relation += 5*(1 - dissent)
-
-We are currently in opposition to the Center-led government, but that does not preclude the general building of feelings of good will.
-
-@center_coalition
-on-arrival: z_relation += 8*(1 - dissent)
-
-We are currently coalition partners with them, so improving relations comes naturally.
-
-@center_bruning
-on-arrival: z_relation += 5*(1 - dissent)
-
-The Brüning semi-autocratic regime makes building friendly relations difficult, but not impossible.
 
 @liberals
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; ddp_relation += 5*(1 - dissent)
-go-to: dvp_stresemann if stresemann_dead = 0; dvp_loss if stresemann_dead = 1 and year <= 1930; dvp_moribound if year > 1930
+on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"
+go-to: po_op if po_in_government = 1 and pr_in_government = 0; po_coalition if po_in_government = 1 and pr_in_government = 1; po_toleration if chancellor = "Brüning"
 
-The [+ ddp_name +] has been one of our closest allies through the course of the Republic.
+@po_op
+on-arrival: po_relation += 5*(1 - dissent); n_relation += 5*(1 - dissent)
 
-@dvp_stresemann
-on-arrival: dvp_relation += 8*(1 - dissent)
+We are currently in opposition to the PO-led government, but that does not preclude the general building of feelings of good will.
 
-Gustav Stresemann, the leader of the DVP is the best foreign policy leaders of the republic, and while he has previously expressed monarchist tendencies, he has been friendly towards us.
+@po_coalition
+on-arrival: po_relation += 10*(1 - dissent); n_relation += 10*(1 - dissent)
 
-@dvp_loss
-on-arrival: dvp_relation += 5*(1 - dissent)
+We are currently coalition partners with them, so improving relations comes naturally.
 
-With the death of Gustav Stresemann, the DVP is much less likely to be accommodating of us. In addition, the liberal parties are electorally in decline, so perhaps our efforts are best spent elsewhere.
+@po_toleration
+on-arrival: po_relation += 8*(1 - dissent); n_relation += 8*(1 - dissent)
 
-However, given the influence of the DVP among the other right-leaning parties [? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+@pis
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"; progressive_dissent += 10
+go-to: pis_op if pis_in_government = 1 and pr_in_government = 0; pis_coalition if pis_in_government = 1 and pr_in_government = 1; pis_toleration if chancellor = "Brüning"
 
-@dvp_moribound
-on-arrival: dvp_relation += 5*(1 - dissent)
+@pis_op
+on-arrival: pis_relation += 3*(1 - dissent)
 
-The liberal parties (both the [+ ddp_name +] and DVP) are electorally moribund, so perhaps our efforts are best spent elsewhere.
+We are currently in opposition to the PiS-led government, but that does not preclude the general building of feelings of good will.
 
-However, given the influence of the DVP among the other right-leaning parties[? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+@pis_coalition
+on-arrival: pis_relation += 7*(1 - dissent)
 
-@spd_alone
+We are currently coalition partners with them, so improving relations comes naturally.
+
+@pis_toleration
+on-arrival: pis_relation += 6*(1 - dissent)
+
+We are currently in toleration to the PiS-led government, which helps to improve our relations with them.
+
+@pslk15
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"
+go-to: psl_op if psl_in_government = 1 and pr_in_government = 0; psl_coalition if psl_in_government = 1 and pr_in_government = 1; psl_toleration if chancellor = "Brüning"
+
+@psl_op
+on-arrival: psl_relation += 4*(1 - dissent); k15_relation += 4*(1 - dissent)
+
+We are currently in opposition to PSL, but that does not preclude the general building of feelings of good will.
+
+@psl_coalition
+on-arrival: psl_relation += 8*(1 - dissent); k15_relation += 8*(1 - dissent)
+
+We are currently coalition partners with them, so improving relations comes naturally.
+
+@psl_toleration
+on-arrival: psl_relation += 6*(1 - dissent); k15_relation += 6*(1 - dissent)
+
+We are currently in giving toleration to PSL and their coalition partners, which helps to improve our relations with them.
+
+@sld
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; z_relation += 2 if z_party_leader == "Joos"; progressive_dissent -= 5
+go-to: sld_op if sld_in_government = 1 and pr_in_government = 0; sld_coalition if sld_in_government = 1 and pr_in_government = 1; sld_toleration if chancellor = "Brüning"
+
+@sld_op
+on-arrival: sld_relation += 5*(1 - dissent)
+
+We are currently in opposition to SLD, but that does not preclude the general building of feelings of good will.
+
+@sld_coalition
+on-arrival: sld_relation += 12*(1 - dissent)
+
+We are currently coalition partners with them, so improving relations comes naturally.
+
+@sld_toleration
+on-arrival: sld_relation += 8*(1 - dissent)
+
+We are currently giving toleration to SLD and their coalition partners, which helps to improve our relations with them.
+
+@pr_alone
 
 Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
 
