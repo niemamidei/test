@@ -404,6 +404,12 @@ Q.west_relation = 0;
 Q.east_relation = 0;
 // Relations with the Soviet Union
 Q.soviet_relation = 0;
+Q.eu_relation = 0;
+Q.usa_relation = 0;
+Q.russia_relation = 0;
+Q.china_relation = 0;
+Q.ukraine_relation = 0;
+Q.belarussian_op_relation = 0;
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
 // reparations vs baseline: young plan is -1.
