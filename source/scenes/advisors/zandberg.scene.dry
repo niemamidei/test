@@ -1,18 +1,18 @@
-title: Otto Wels
+title: Adrian Zandberg
 is-pinned-card: true
-tags: advisor, centrist
-card-image: img/portraits/WelsOtto.jpg
-view-if: wels_advisor = 1
+tags: advisor, left
+card-image: img/portraits/zandberg.jpg
+view-if: zandberg_advisor = 1
 new-page: true
 
-= Otto Wels
+= Adrian Zandberg
 
-Wels is the long-time chairman of the SPD. He is a gifted organizer and a member of the centrist faction.
+Adrian Zandberg is one of the founders of the party, he is by far the most popular politician in Razem.
 
 - @clear_agenda
 - @party_discipline
 - @emergency_fundraising
-- @snap_election
+- @media
 - @root: Return to main
 
 @clear_agenda
@@ -36,7 +36,7 @@ title: Party Discipline
 subtitle: Reduce dissent across the party.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; left_dissent -= 5; labor_dissent -= 10; center_dissent -= 10; reformist_dissent -= 10; neorevisionist_dissent -= 5
+on-arrival: advisor_action_timer = 6; left_dissent -= 10; progressive_dissent -= 10
 
 We have enforced party discipline to reduce dissent across all factions.
 
@@ -50,12 +50,12 @@ on-arrival: advisor_action_timer = 6; resources += dues
 
 We have gained +[+ dues +] resources.
 
-@snap_election
-title: Snap Election
-subtitle: Call a snap election.
-unavailable-subtitle: [? if chancellor != "Wels" : Wels must be Chancellor or President. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer == 0 and (chancellor == "Wels")
-on-arrival: advisor_action_timer = 6; time_to_election = 3
-call: set_next_election_time
 
-We have called for new elections, set for [+ next_election_month : month +] [+ next_election_year +].
+@media
+title: Make media appearances.
+subtitle: As the most popular of Razem's politicians Adrian Zandberg can make multiple media appearances.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: workers_spd += 2*(1-dissent); students_spd += 2*(1-dissent); advisor_action_timer = 6
+
+Adrian Zandberg has made media appearances.
