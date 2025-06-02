@@ -38,4 +38,5 @@ title: Campaign against the far-right.
 subtitle: Campaign against Konfederacja and the more radical wing of PiS.
 choose-if: advisor_action_timer == 0 and chancellor == "Müller"
 on-arrival: workers_kwin -= 2; students_kwin -= 1; students_pis -= 1; workers_pis -= 1
+
 We campaigned against the far-right.
