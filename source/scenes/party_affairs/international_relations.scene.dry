@@ -38,7 +38,7 @@ We improved our cooperation with the Ukrainian Batkivschyna and the Belarussian 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; china_relation += 1; workers_pr -= 1; entrepreneurs_pr -= 1; unemployed_pr -= 1; pensioners_pr -= 2;
+on-arrival: resources -= 1; china_relation += 1; workers_pr -= 2; entrepreneurs_pr -= 1; unemployed_pr -= 1; pensioners_pr -= 2;
 
 We began some small-scale cooperation with the CCP, although it will make us lose voters.
 
@@ -46,7 +46,7 @@ We began some small-scale cooperation with the CCP, although it will make us los
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; usa_relation += 0.5
+on-arrival: resources -= 1; usa_relation += 1
 
 We contacted the Democratic Party, although it didn't bring us much in return.
 
