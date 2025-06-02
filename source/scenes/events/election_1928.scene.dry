@@ -42,7 +42,7 @@ on-arrival: {!
 // election threshold constitutional reform
 // banning parties
 var new_party_sum = 0;
-for (var party of Q.parties) {{
+for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold) {
@@ -182,7 +182,7 @@ for (var party of Q.parties) {
     election_result[party] = Q[party + '_r'];
 }
 Q.election_records.push(election_result);
-!}
+}
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
 data = [
