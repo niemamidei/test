@@ -41,6 +41,6 @@ on-departure: ideology = "progressive"; progressive_strength += 10; democratizat
 The progressive wing of the party seeks to enact social reform with support of the other parties, and is most supportive of coalitions with the other liberal parties.
 
 @changed
-on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5
+on-arrival: left_dissent += 5; progressive_dissent += 5
 
 We have changed ideologies. Many in the party feel unmoored.
