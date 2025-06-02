@@ -47,8 +47,6 @@ for (var party of Q.parties) {
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold) {
             Q[party + '_r'] = 0;
-    if (Q.sld_votes < 8) {
-            Q(Q.sld_r) = 0;
         } else {
             Q[party + '_r'] = Q[party + '_votes'];
         }
@@ -182,7 +180,7 @@ for (var party of Q.parties) {
     election_result[party] = Q[party + '_r'];
 }
 Q.election_records.push(election_result);
-}
+!}
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
 data = [
@@ -262,7 +260,7 @@ if (window && d3) {
     parliament.exit.toCenter(false).bigToSmall(true);
     d3.select("#reichstag").datum(data).call(parliament);
 }
-}
+!}
 go-to: coalition_menu
 
 = Election results
