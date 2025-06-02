@@ -56,6 +56,6 @@ title: Make media appearances.
 subtitle: As the most popular of Razem's politicians Adrian Zandberg can make multiple media appearances.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: workers_spd += 2*(1-dissent); students_spd += 2*(1-dissent); advisor_action_timer = 6
+on-arrival: workers_pr += 2*(1-dissent); students_pr += 2*(1-dissent); advisor_action_timer = 6
 
 Adrian Zandberg has made media appearances.
