@@ -20,18 +20,18 @@ Mass rallies are a common feature of social democratic life, especially in the l
 - @easy_discard
 
 @inequalities
-on-arrival: workers_pr += 2*(1-dissent); unemployed_pr += 2*(1-dissent); entrepreneurs_pr -= 3*(1-dissent); left_strenght += 5; left_dissent -= 5
+on-arrival: workers_pr += (1-dissent); unemployed_pr += (1-dissent); entrepreneurs_pr -= 3*(1-dissent); left_strenght += 5; left_dissent -= 5
 
 Our fight against social inequalities appeals to the left wing of the working class, while potentially alienating entrepreneurs. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
 @rights
-on-arrival: students_pr += 4*(1-dissent); unemployed_pr += 1*(1-dissent); workers_pr += 1*(1-dissent); pensioners_pr -= 3*(1-dissent); farmers_pr -= 1*(1-dissent); progressive_strenght += 5; progressive_dissent -= 5
+on-arrival: students_pr += 2*(1-dissent); unemployed_pr += (1-dissent); pensioners_pr -= 3*(1-dissent); farmers_pr -= 1*(1-dissent); progressive_strenght += 5; progressive_dissent -= 5
 
 We campaigned for women's rights and LGBTQ rights, it brings us support amongst the youth whilst alienating the elderly and the more conservative farmers.
 
 @constitution
 view-if: const_crisis = 1
-on-arrival: workers_pr += 2*(1-dissent); entrepreneurs_pr += 1*(1-dissent); progressive_strenght += 5; progressive_dissent -= 5; pis_relation -= 10; workers_pis -= 3; entrepreneurs_pis -= 2
+on-arrival: workers_pr += (1-dissent); entrepreneurs_pr += (1-dissent); progressive_strenght += 5; progressive_dissent -= 5; pis_relation -= 10; workers_pis -= 3; entrepreneurs_pis -= 2
 
 Our speakers defend the rule of law whilst criticizing the government's control over the Constitutional Tribunal.
 
@@ -41,11 +41,11 @@ on-arrival: workers_pr += 2*(1-dissent); progressive_strenght -= 5; progressive_
 We rallied against the duopoly of PO and PiS, it will make our participation in government harder.
 
 @welfare
-on-arrival: workers_pr += 2*(1-dissent); students_pr += 1*(1-dissent); pensioners_pr += 3*(1-dissent); entrepreneurs_pr -= 2*(1-dissent)
+on-arrival: workers_pr += (1-dissent); students_pr += (1-dissent); pensioners_pr += (1-dissent)
 
 We rallied for expansion of various social programs.
 
 @local
-on-arrival: workers_pr += 1*(1-dissent); students_pr += 1*(1-dissent); pensioners_pr += 2*(1-dissent)
+on-arrival: workers_pr += (1-dissent); students_pr += (1-dissent); pensioners_pr += 2*(1-dissent)
 
 Our speakers have gauged the mood and are speaking to the issues that seem to most affect the people in this moment.
