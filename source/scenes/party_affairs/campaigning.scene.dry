@@ -24,7 +24,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: workers_pr += 2*(1-dissent); resources -= 1
+on-arrival: workers_pr += (1-dissent); resources -= 1
 
 We have increased our campaigning among the workers.
 
@@ -32,7 +32,7 @@ We have increased our campaigning among the workers.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: entrepreneurs_pr += 2*(1-dissent); resources -= 1
+on-arrival: entrepreneurs_pr += (1-dissent); resources -= 1
 
 We have increased our campaigning among the entrepreneurs.
 
@@ -40,7 +40,7 @@ We have increased our campaigning among the entrepreneurs.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: students_pr += 2*(1-dissent); resources -= 1
+on-arrival: students_pr += (1-dissent); resources -= 1
 
 We have increased our campaigning among students.
 
@@ -48,7 +48,7 @@ We have increased our campaigning among students.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: farmers_pr += 2*(1-dissent); resources -= 1
+on-arrival: farmers_pr += (1-dissent); resources -= 1
 
 We have increased our campaigning among farmers.
 
@@ -56,7 +56,7 @@ We have increased our campaigning among farmers.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: unemployed_pr += 2*(1-dissent); resources -= 1
+on-arrival: unemployed_pr += (1-dissent); resources -= 1
 
 We have increased our campaigning among the unemployed.
 
@@ -64,6 +64,6 @@ We have increased our campaigning among the unemployed.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: pensioners_pr += 2*(1-dissent); resources -= 1
+on-arrival: pensioners_pr += (1-dissent); resources -= 1
 
 We have increased our campaigning among pensioners.
