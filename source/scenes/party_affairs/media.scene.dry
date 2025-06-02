@@ -18,7 +18,6 @@ The SPD runs a veritable media empire, with many newspapers throughout every Ger
 - @social
 - @social_2
 - @social_3
-- @social_4
 - @return: We should not do anything with media at the moment.
 - @easy_discard
 - @cancel_advisor_action
@@ -26,7 +25,7 @@ The SPD runs a veritable media empire, with many newspapers throughout every Ger
 @tvn
 title: Make an appearance in TVN24.
 subtitle: TVN is a liberal news channel.
-on-arrival: workers_pr += 2*(1 - dissent); entrepreneurs_pr += 2*(1 - dissent)
+on-arrival: workers_pr += (1 - dissent); entrepreneurs_pr += (1 - dissent)
 
 Our politicans made appearances in TVN24.
 
@@ -34,7 +33,7 @@ Our politicans made appearances in TVN24.
 title: Make an appearance in TVP Info.
 subtitle: TVP Info is a news channel run by the state broadcaster.
 view-if: po_in_government = 1
-on-arrival: workers_pr += 2*(1 - dissent); pensioners_pr += 2*(1 - dissent)
+on-arrival: workers_pr += (1 - dissent); pensioners_pr += (1 - dissent)
 
 Our politicans made appearances in TVP Info.
 
@@ -42,7 +41,7 @@ Our politicans made appearances in TVP Info.
 title: Make an appearance in TVP Info.
 subtitle: TVP Info is a news channel run by the state broadcaster, it has been criticised for airing pro-PiS propanaganda.
 view-if: pis_in_government = 1
-on-arrival: workers_pr += 2*(1 - dissent); pensioners_pr += 2*(1 - dissent); progressive_dissent += 5; pis_relation += 5
+on-arrival: workers_pr += (1 - dissent); pensioners_pr += (1 - dissent); progressive_dissent += 5; pis_relation += 5; po_relation -= 5
 
 Our politicans made appearances in TVP Info.
 
@@ -50,7 +49,7 @@ Our politicans made appearances in TVP Info.
 title: Make an appearance in TV Republika.
 subtitle: TV Republika is a private right-wing news station, it has been criticised for airing pro-PiS propanaganda.
 view-if: pis_in_government = 0 and year >= 2023
-on-arrival: workers_pr += 1*(1 - dissent); pensioners_pr += 1*(1 - dissent); progressive_dissent += 5; pis_relation += 5
+on-arrival: workers_pr += (1 - dissent); pensioners_pr += (1 - dissent); progressive_dissent += 5; pis_relation += 5
 
 Our politicans made appearances in TV Republika.
 
@@ -60,7 +59,7 @@ subtitle: -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 view-if: radio = 0
-on-arrival: radio += 1; resources -= 2; students_pr += 2
+on-arrival: radio += 1; resources -= 2; students_pr += 1
 
 Our social media channels are gaining popularity, which will help us gain votes among the youth.
 
@@ -70,24 +69,14 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: radio > 0 and radio <= 3
-on-arrival: radio += 1; resources -= 1; students_pr += 3
+on-arrival: radio += 1; resources -= 1; students_pr += 1
 
 @social_3
 title: We need to keep campaigning in social media.
-subtitle: It is now financially self-sufficient, and does not require any more resources.
+subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: radio > 3 and radio <= 5
-on-arrival: radio += 1; resources -= 1; students_pr += 4
-
-Our social media channels are gaining popularity, which will help us gain votes among the youth.
-
-@social_4
-title: We need to keep campaigning in social media.
-subtitle: As radio becomes more common, the novelty is beginning to wear off, and radio is becoming saturated in society. -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-view-if: radio > 3 and (radio >= 6 or year >= 2024) and radio <= 9
-on-arrival: radio += 1; resources -= 1; students_pr += 5
+on-arrival: radio += 1; resources -= 1; students_pr += 2
 
 Our social media channels are gaining popularity, which will help us gain votes among the youth.
