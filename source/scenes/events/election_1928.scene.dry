@@ -54,7 +54,7 @@ for (var party of Q.parties) {
     } else {
         Q[party + '_r'] = Q[party + '_votes'];
     }
-if (Q.sld_votes) < 8 and year = 2015
+if ((Q.sld_votes) < 8) and year = 2015
             Q.sld_r = 0;
     // if we use decimals, then we might want to truncate the numbers
     if (Q.use_decimals) {
