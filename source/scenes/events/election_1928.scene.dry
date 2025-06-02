@@ -44,13 +44,13 @@ on-arrival: {!
 var new_party_sum = 0;
 for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
-if ((Q.sld_votes) < 8) and (year = 2015)
-            Q.sld_r = 0;
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold) {
             Q[party + '_r'] = 0;
         } else {
             Q[party + '_r'] = Q[party + '_votes'];
+if ((Q.sld_votes) < 8) and (year = 2015)
+            Q.sld_r = 0;
         }
         new_party_sum += Q[party + '_r'];
     } else {
