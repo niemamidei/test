@@ -1,44 +1,41 @@
-title: Hermann Müller
+title: Maciej Konieczny
 is-pinned-card: true 
 tags: advisor, centrist
-card-image: img/portraits/MüllerHermann.jpg
+card-image: img/portraits/konieczny.jpg
 new-page: true
-view-if: muller_advisor = 1
+view-if: konieczny_advisor = 1
 
-= Herman Müller
+= Maciej Konieczny
 
 
-Müller is a former [? if chancellor = "Müller": and current ?] Chancellor, and is a long-time Social Democratic leader.
+Konieczny is one of the party founders and an alter-globalization activist.
 
-- @coalition
-- @toleration
-- @snap_election
+- @international
+- @party_discipline
+- @kwin
 - @root: Return to main
 
-@coalition
-title: Negotiating with the Coalition
-subtitle: Müller can improve our relationships with our coalition partners.
-choose-if: advisor_action_timer <= 0 and spd_in_government = 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government: The SPD is not in government. ?]
-on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if spd_in_government = 1 and coalition_dissent > 0; z_relation += 5; ddp_relation += 5; dvp_relation += 5
+@international
+title: International Party Relations
+subtitle: Konieczny has contacts with international socialist parties.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6; international_relations_timer -= 12; last_advisor_action = 1
+go-to: international_relations
 
-We have improved our relations with the Z, [+ ddp_name +], and DVP, and reduced tensions with the coalition.
 
+@party_discipline
+title: Party Discipline
+subtitle: Reduce dissent across the party.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; left_dissent -= 10; progressive_dissent -= 10
 
-@toleration
-title: Defending Toleration
-subtitle: Müller supports the toleration arrangement with the bourgeois parties.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_toleration: The SPD is not in toleration. ?]
-choose-if: spd_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_dissent -= 8; neorevisionist_dissent -= 8; center_dissent -= 5;
+We have enforced party discipline to reduce dissent across all factions.
 
-We have reduced dissent among the anti-toleration factions. 
-
-@snap_election
-title: Snap Election
-subtitle: Call a snap election.
-unavailable-subtitle: [? if chancellor != "Müller" : Müller must be Chancellor. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+@kwin
+title: Campaign against the far-right.
+subtitle: Campaign against Konfederacja and the more radical wing of PiS.
 choose-if: advisor_action_timer == 0 and chancellor == "Müller"
-on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12;
-
-We have called for new elections, set for [+ next_election_month : month +] [+ next_election_year +].
+on-arrival: workers_kwin -= 2; students_kwin -= 1; students_pis -= 1; workers_pis -= 1
+We campaigned against the far-right.
