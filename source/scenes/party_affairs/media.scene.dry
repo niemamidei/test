@@ -49,7 +49,7 @@ Our politicans made appearances in TVP Info.
 @republika
 title: Make an appearance in TV Republika.
 subtitle: TV Republika is a private right-wing news station, it has been criticised for airing pro-PiS propanaganda.
-view-if: pis_in_government = 0 and year <= 2023
+view-if: pis_in_government = 0 and year >= 2023
 on-arrival: workers_pr += 1*(1 - dissent); pensioners_pr += 1*(1 - dissent); progressive_dissent += 5; pis_relation += 5
 
 Our politicans made appearances in TV Republika.
