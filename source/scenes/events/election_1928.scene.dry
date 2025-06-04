@@ -88,17 +88,25 @@ if (Q.electoral_threshold > 0) {
 // get change arrows and signs
 
 
-// The largest party can only be the NSDAP or the SPD.
-Q.largest_party = 'SPD';
-if (Q.nsdap_r >= Q.spd_r && Q.nsdap_r >= Q.kpd_r) {
-    Q.largest_party = 'NSDAP';
-}
-
-if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
-    Q.largest_party = 'KPD';
+// The largest party can only be PO or PiS.
+Q.largest_party = 'PiS';
+if (Q.po_r >= Q.pis_r) {
+    Q.largest_party = 'PO';
 }
 
 // coalitions
+Q.po_n_coalition = Q.po_r + Q.n_r
+Q.po_n_psl_coalition = Q.po_r + Q.n_r + Q.psl_r
+Q.po_n_sld_coalition = Q.po_r + Q.n_r + Q.sld_r
+Q.pis_k15_coalition = Q.pis_r + Q.k15_r
+Q.po_n_left_coalition = Q.po_r + Q.n_r + Q.sld_r + Q.pr_r
+Q.pis_pr_coalition = Q.pis_r + Q.pr_r
+Q.po_n_psl_k15_coalition = Q.po_r + Q.n_r + Q.psl_r +Q.k15_r
+Q.po_n_psl_sld_coalition = Q.po_r + Q.n_r + Q.psl_r + Q.sld_r
+Q.colorful_coalition = Q.po_r + Q.n_r + Q.psl_r + Q.sld_r + Q.pr_r
+Q.colorful_coalition_nosld = Q.po_r + Q.n_r + Q.psl_r + Q.pr_r
+Q.right_wing_coalition = Q.pis_r + Q.k15_r+ Q.kwin_r
+
 Q.weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r - 3;
 Q.grand_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r;
 Q.bourgeois_coalition = Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
@@ -120,7 +128,7 @@ if (Q.kpd_relation >= 30) {
     Q.weimar_coalition += Q.sapd_r;
 }
 
-Q.leverage = Q.spd_r;
+Q.leverage = Q.pr_r;
 
 Q.grand_coalition_failed = 0;
 // Reset government and ministers... Based on Brüning's 1930 govt
