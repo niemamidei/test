@@ -35,8 +35,19 @@ President: [+ president +]
 
 Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
-Reichstag composition:
+Ministers:
+Finance - [+ finance_minister +] ([+ finance_minister_party +])
+Family - [+ family_minister +] ([+ family_minister_party +])
+Agriculture - [+ rural_minister +] ([+ rural_minister_party +])
+Climate - [+ climate_minister +] ([+ climate_minister_party +])
+Infrastructure - [+ infrastructure_minister +] ([+ infrastructure_minister_party +])
+Justice - [+ justice_minister +] ([+ justice_minister_party +])
+Education - [+ education_minister +] ([+ education_minister_party +])
+Defense - [+ defense_minister +] ([+ defense_minister_party +])
+Health - [+ health_minister +] ([+ health_minister_party +])
+Foreign - [+ foreign_minister +] ([+ foreign_minister_party +])
 
+Sejm composition:
 # 1928: 30, 1930: 25, 1932: 22
 {!<span class="tooltip-text" title="Together Party">PR</span>!}: [+ pr_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
