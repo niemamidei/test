@@ -314,11 +314,7 @@ There are some potential coalition arrangements.
 
 @coalition_menu
 
-- @po_majority
-- @pis_majority
-- @pon_majority
-- @popsl_majority
-- @ponpsl_majority
+- @spd_majority
 - @weimar_coalition
 - @grand_coalition
 - @new_grand_coalition
@@ -332,35 +328,6 @@ There are some potential coalition arrangements.
 
 # TODO: black-brown coalition
 
-@po_majority
-title: PO majority alone
-subtitle: PO: [+ po_r +]%
-view-if: po_r >= 50
-on-arrival: chancellor = "Kidawa-Błońska"; chancellor_party = "PO"; po_in_government = 1; in_po_coalition = 1; finance_minister_party = "PO"; finance_minister = "Domański"; family_minister_party = "PO"; family_minister = "Gajewska"; rural_minister_party = "PO"; rural_minister = "Plocke"; climate_minister_party = "I"; climate_minister = "Grabowski"; infrastructure_minister_party = "PO"; infrastructure_minister = "Marchewska"; justice_minister_party = "PO"; justice_minister = "Myrcha"; education_minister_party = "PO"; education_minister = "Nowacka"; defense_minister_party = "PO"; defense_minister = "Siemoniak"; health_minister_party = "PO"; health_minister = "Leszczyna"; foreign_minister_party = "PO"; foreign_minister = "Schetyna"
-
-@pis_majority
-title: PiS majority alone
-subtitle: PiS: [+ pis_r +]%
-view-if: pis_r >= 50
-on-arrival: chancellor = "Szydło"; chancellor_party = "PiS"; pis_in_government = 1; in_pis_coalition = 1; finance_minister_party = "PiS"; finance_minister = "Morawiecki"; family_minister_party = "PiS"; family_minister = "Rafalska"; rural_minister_party = "PiS"; rural_minister = "Jurgiel"; climate_minister_party = "PiS"; climate_minister = "Kowalczyk"; infrastructure_minister_party = "PiS"; infrastructure_minister = "Adamczyk"; justice_minister_party = "PiS"; justice_minister = "Ziobro"; education_minister_party = "PiS"; education_minister = "Zalewska"; defense_minister_party = "PiS"; defense_minister = "Błaszczak"; health_minister_party = "I"; health_minister = "Niedzielski"; foreign_minister_party = "PiS"; foreign_minister = "Rau"
-
-@pon_majority
-title: PO and N. coalition
-subtitle: PO + N.: [+ po_n_coalition +]%
-view-if: po_n_coalition >= 50
-on-arrival: chancellor = "Kidawa-Błońska"; chancellor_party = "PO"; po_in_government = 1; n_in_government = 1; in_pon_coalition = 1; finance_minister_party = "N."; finance_minister = "Zembaczyński"; family_minister_party = "PO"; family_minister = "Gajewska"; rural_minister_party = "PO"; rural_minister = "Plocke"; climate_minister_party = "I"; climate_minister = "Grabowski"; infrastructure_minister_party = "PO"; infrastructure_minister = "Marchewska"; justice_minister_party = "N."; justice_minister = "Dolniak"; education_minister_party = "N."; education_minister = "Lubnauer"; defense_minister_party = "PO"; defense_minister = "Siemoniak"; health_minister_party = "PO"; health_minister = "Leszczyna"; foreign_minister_party = "PO"; foreign_minister = "Schetyna"
-
-@popsl_majority
-title: PO and PSL coalition
-subtitle: PO + PSL: [+ po_psl_coalition +]%
-view-if: po_psl_coalition >= 50
-on-arrival: chancellor = "Kidawa-Błońska"; chancellor_party = "PO"; po_in_government = 1; psl_in_government = 1; in_popsl_coalition = 1; finance_minister_party = "PO"; finance_minister = "Domański"; family_minister_party = "PO"; family_minister = "Gajewska"; rural_minister_party = "PSL"; rural_minister = "Siekierski"; climate_minister_party = "I"; climate_minister = "Grabowski"; infrastructure_minister_party = "PSL"; infrastructure_minister = "Klimczak"; justice_minister_party = "PO"; justice_minister = "Myrcha"; education_minister_party = "PO"; education_minister = "Nowacka"; defense_minister_party = "PSL"; defense_minister = "Kosiniak-Kamysz"; health_minister_party = "PO"; health_minister = "Leszczyna"; foreign_minister_party = "PO"; foreign_minister = "Schetyna"
-
-@ponpsl_majority
-title: PO, N. and PSL coalition
-subtitle: PO + N. + PSL: [+ po_n_psl_coalition +]%
-view-if: po_n_psl_coalition >= 50
-on-arrival: chancellor = "Kidawa-Błońska"; chancellor_party = "PO"; po_in_government = 1; n_in_government = 1; in_pon_coalition = 1; finance_minister_party = "PO"; finance_minister = "Domański"; family_minister_party = "PO"; family_minister = "Gajewska"; rural_minister_party = "PSL"; rural_minister = "Siekierski"; climate_minister_party = "I"; climate_minister = "Grabowski"; infrastructure_minister_party = "PO"; infrastructure_minister = "Marchewska"; justice_minister_party = "N."; justice_minister = "Dolniak"; education_minister_party = "N."; education_minister = "Lubnauer"; defense_minister_party = "PSL"; defense_minister = "Kosiniak-Kamysz"; health_minister_party = "PO"; health_minister = "Leszczyna"; foreign_minister_party = "PO"; foreign_minister = "Schetyna"
 
 @popular_front_coalition
 title: A new "Popular Front" coalition?
