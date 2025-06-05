@@ -314,6 +314,8 @@ There are some potential coalition arrangements.
 
 @coalition_menu
 
+- @po_majority
+- @pis_majority
 - @spd_majority
 - @weimar_coalition
 - @grand_coalition
@@ -328,6 +330,17 @@ There are some potential coalition arrangements.
 
 # TODO: black-brown coalition
 
+@po_majority
+title: PO majority alone
+subtitle: PO: [+ po_r +]%
+view-if: po_r >= 50
+on-arrival: chancellor = "Kidawa-Błońska"; chancellor_party = "PO"; po_in_government = 1; foreign_minister_party = "PO"; foreign_minister = "Sikorski"
+
+@po_majority
+title: PiS majority alone
+subtitle: PiS: [+ pis_r +]%
+view-if: pis_r >= 50
+on-arrival: chancellor = "Szydło"; chancellor_party = "PiS"; pis_in_government = 1; foreign_minister_party = "PiS"; foreign_minister = "Rau"
 
 @popular_front_coalition
 title: A new "Popular Front" coalition?
