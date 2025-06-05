@@ -46,7 +46,7 @@ for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold) {
-            Q[party + '_r'] = 0; if year = 2015 and Q.sld_votes < 8 then Q.sld_r = 0
+            Q[party + '_r'] = 0;
         } else {
             Q[party + '_r'] = Q[party + '_votes'];
         }
