@@ -47,6 +47,8 @@ for (var party of Q.parties) {
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold) {
             Q[party + '_r'] = 0;
+    } if (year = 2015 && sld_votes < 8) {
+         Q.sld_r = 0;
         } else {
             Q[party + '_r'] = Q[party + '_votes'];
         }
@@ -64,10 +66,7 @@ for (var party of Q.parties) {
     var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
     Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
 }
-//SLD 2015
-if (year = 2015 && sld_votes < 8) {
- Q.sld_r = 0;
-        }
+
 // calculate new party sum if electoral reform
 if (Q.electoral_threshold > 0) {
     for (var party of Q.parties) {
