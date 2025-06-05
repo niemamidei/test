@@ -50,7 +50,9 @@ for (var party of Q.parties) {
         } else {
             Q[party + '_r'] = Q[party + '_votes'];
         }
-        new_party_sum += Q[party + '_r'];
+        if year = 2015 and Q.sld_votes < 8 {
+            Q.slr_r = 0
+      }  new_party_sum += Q[party + '_r'];
     } else {
         Q[party + '_r'] = Q[party + '_votes'];
     }
