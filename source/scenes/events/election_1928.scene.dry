@@ -67,7 +67,7 @@ for (var party of Q.parties) {
 // calculate new party sum if electoral reform
 if (year = 2015 and Q.sld_votes < 8) {
     Q.sld_r = 0;
-    }
+    } }
 if (Q.electoral_threshold > 0) {
     for (var party of Q.parties) {
         if (Q[party + '_r'] > 0) {
