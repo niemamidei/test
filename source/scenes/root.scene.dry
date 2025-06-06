@@ -139,12 +139,12 @@ Q.rfb_banned = 0;
 Q.rfb_banned_prussia = 0;
 
 // youth members (guesswork)
-Q.m_razem_members = 300;
-Q.m_pis_members = 1100;
-Q.m_demokraci_members = 2000;
-Q.m_ludowcy_members = 500;
-Q.m_socjaldemokraci_members = 600;
-Q.m_wszechpolska_members = 1000;
+Q.m_razem = 300;
+Q.m_pis = 1100;
+Q.m_demokraci = 2000;
+Q.m_ludowcy = 500;
+Q.m_socjaldemokraci = 600;
+Q.m_wszechpolska = 1000;
 
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
