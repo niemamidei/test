@@ -121,17 +121,17 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Youth organisations
 
-{!<span class="tooltip-text" title="Young Together is the youth wing of Together Party.">Młodzi Razem</span>!} Members: [+ m_razem +]
+{!<span class="tooltip-text" title="Young Together is the youth wing of Together Party.">Młodzi Razem</span>!}: [+ m_razem +] members.
 
-{!<span class="tooltip-text" title="Federation of Young Socialdemocrats is the youth wing of Democratic Left Alliance.">Federacja Młodych Socjaldemokratów</span>!} Members: [+ m_socjaldemokraci +]
+{!<span class="tooltip-text" title="Federation of Young Socialdemocrats is the youth wing of Democratic Left Alliance.">Federacja Młodych Socjaldemokratów</span>!}: [+ m_socjaldemokraci +] members.
 
-{!<span class="tooltip-text" title="Young Democrats is the youth wing of Civic Coalition.">Młodzi Demokraci</span>!} Members: [+ m_demokraci +]
+{!<span class="tooltip-text" title="Young Democrats is the youth wing of Civic Coalition.">Młodzi Demokraci</span>!}: [+ m_demokraci +] members.
 
-{!<span class="tooltip-text" title="People's Youth Forum is the youth wing of Polish People's Party.">Forum Młodych Ludowców</span>!} Members: [+ m_ludowcy +]
+{!<span class="tooltip-text" title="People's Youth Forum is the youth wing of Polish People's Party.">Forum Młodych Ludowców</span>!}: [+ m_ludowcy +] members.
 
-{!<span class="tooltip-text" title="PiS Youth Forum is the youth wing of Law and Justice.">Forum Młodych PiS</span>!} Members: [+ m_pis +]
+{!<span class="tooltip-text" title="PiS Youth Forum is the youth wing of Law and Justice.">Forum Młodych PiS</span>!}: [+ m_pis +] members.
 
-{!<span class="tooltip-text" title="All-Polish Youth is an independent far-right youth organisation with strong ties to National Movement.">Młodzież Wszechpolska</span>!} Members: [+ m_wszechpolska +]
+{!<span class="tooltip-text" title="All-Polish Youth is an independent far-right youth organisation with strong ties to National Movement.">Młodzież Wszechpolska</span>!}: [+ m_wszechpolska +] members.
 
 @polls
 on-arrival: {!
