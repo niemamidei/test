@@ -28,6 +28,7 @@ on-arrival: m_razem += 50; resources -= 1; students_pr += 1
 We popularized our youth wing which increased its amount of members.
 
 @same
+
 We kept the youth wing the same.
 
 - @return: Continue...
