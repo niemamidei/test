@@ -44,9 +44,6 @@ for (var party of Q.parties) {
     var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
     Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
 }
-if (sld_votes < 8 && year == 2015) {
-    sld_r = 0;
-}
 // calculate new party sum if electoral reform
 if (Q.electoral_threshold > 0) {
     for (var party of Q.parties) {
