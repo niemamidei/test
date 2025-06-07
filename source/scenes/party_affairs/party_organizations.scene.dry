@@ -24,7 +24,7 @@ We can fund various party activities.
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-on-arrival: resources -= 1; media_timer = 0;
+on-arrival: resources -= 1; media_timer = 0
 go-to: media
 
 @structures
