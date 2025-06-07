@@ -324,7 +324,7 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Duda";
+Q.president = "Komorowski";
 // starting chancellor
 Q.chancellor = "Kopacz";
 Q.chancellor_party = 'PO';
