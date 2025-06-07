@@ -3,6 +3,7 @@ view-if: year >= 2015 and month >= 5
 max-visits: 1
 tags: event
 new-page: true
+priority: 1
 
 = Presidential elections second round
 
