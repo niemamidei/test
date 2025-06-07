@@ -12,7 +12,7 @@ max-visits: 5
 
 We can fund various party activities.
 
-- @media: Make media appearances.
+- @media: Fund our social media.
 - @structures: Improve our structures in smaller towns.
 - @youth: Fund our youth wing.
 - @protestpis: Organize a protest against the current government.
@@ -24,8 +24,7 @@ We can fund various party activities.
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-on-arrival: resources -= 1; media_timer = 0
-go-to: media
+on-arrival: radio += 1; resources -= 1; students_pr += 1
 
 @structures
 choose-if: resources > 0
