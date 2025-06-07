@@ -1,10 +1,8 @@
 title: Duda becomes president
-view-if: year = 2015 and month >= 8
-frequency: 1000
+view-if: year >= 2015 and month >= 8
 max-visits: 1
 tags: event
 on-arrival: president = "Duda"
-face-image: img/portraits/StresemannGustav.jpg
 new-page: true
 
 = Duda becomes president
