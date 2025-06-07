@@ -1,0 +1,17 @@
+title: Presidential elections second round
+view-if: year = 2015 and month = 5
+frequency: 1000
+max-visits: 1
+priority: -1
+tags: event
+new-page: true
+
+= Presidential elections second round
+
+Just a few days after the Together Party has been formed, the second round of presidential elections will take place. Most polls predict that current president Komorowski, backed by PO, will win against PiS candidate Andrzej Duda.
+
+- @continue: The results come in
+
+@continue
+
+Surprisingly, PiS candidate Andrzej Duda has won against the current president Komorowski with 51.55% of the votes against 48.45%.
