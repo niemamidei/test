@@ -4,6 +4,7 @@ frequency: 1000
 max-visits: 1
 priority: -1
 tags: event
+face-image: img/All_Quiet.jpg
 new-page: true
 
 = Presidential elections second round
