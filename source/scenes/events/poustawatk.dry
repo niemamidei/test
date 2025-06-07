@@ -3,6 +3,7 @@ view-if: year == 2015 and month = 6
 frequency: 1000
 max-visits: 1
 tags: event
+face-image: img/All_Quiet.jpg
 new-page: true
 
 = Amendment on the Constitutional Tribunal Act
