@@ -1,5 +1,5 @@
 title: Amendment on the Constitutional Tribunal Act
-view-if: year >= 2015 and month >= 6
+view-if: year = 2015 and month = 6
 max-visits: 1
 tags: event
 new-page: true
