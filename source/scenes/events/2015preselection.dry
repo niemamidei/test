@@ -1,11 +1,8 @@
 title: Presidential elections second round
-view-if: year = 2015 and month = 5
-frequency: 1000
-max-visits: 1
-priority: -1
-tags: event
-face-image: img/All_Quiet.jpg
 new-page: true
+view-if: year = 2015 and month = 5
+max-visits: 1
+tags: event
 
 = Presidential elections second round
 
