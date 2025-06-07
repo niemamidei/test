@@ -1,8 +1,8 @@
 title: Duda becomes president
-new-page: true
-view-if: year = 2015 and month = 8
+view-if: year = 2015 and month >= 8
 max-visits: 1
 tags: event
+new-page: true
 on-arrival: Q.president = "Duda"
 
 = Duda becomes president
