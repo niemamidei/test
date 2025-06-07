@@ -1,8 +1,8 @@
 title: Presidential elections second round
-new-page: true
-view-if: year = 2015 and month = 5
+view-if: year = 2015 and month >= 5
 max-visits: 1
 tags: event
+new-page: true
 
 = Presidential elections second round
 
