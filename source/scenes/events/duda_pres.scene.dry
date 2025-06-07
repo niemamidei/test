@@ -3,7 +3,7 @@ new-page: true
 tags: event
 view-if: year = 2015 and month = 8
 max-visits: 1
-on-arrival: Q.president = "Duda"
+on-arrival: president = "Duda"
 
 = Duda becomes president
 
