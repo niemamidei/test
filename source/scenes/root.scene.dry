@@ -590,7 +590,7 @@ on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_re
 go-to: 1928_main
 
 @1928_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; Q.workers_pr = 2; Q.farmers_pr = 1; Q.pensioners_pr = 1; Q.students_pr = 3; Q.unemployed_pr = 2; Q.entrepreneurs_pr = 1
+on-arrival: difficulty = 1; resources = 0; dues = 1; workers_pr = 2; farmers_pr = 1; pensioners_pr = 1; students_pr = 3; unemployed_pr = 2; entrepreneurs_pr = 1
 go-to: 1928_main
 
 @1928_historical
